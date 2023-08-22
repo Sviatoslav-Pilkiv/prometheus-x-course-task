@@ -17,7 +17,7 @@ export default function BookList() {
     { key: "price 30+", name: "30+$", min: 30 },
   ]);
   const [changePrice, setChangePrice] = useState("all");
-  const defaultImage = "../../image/notImage.jpg";
+  // const defaultImage = "../../image/notImage.jpg";
 
   const handleBookName = (event) => {
     const searchText = event.target.value;
@@ -68,7 +68,7 @@ export default function BookList() {
           originalBooks.map((book) => (
             <div key={book.id} className="book">
               <img
-                src={book.image || defaultImage}
+                src={book.image || notImage}
                 alt={book.title}
                 className="book-image"
               />
