@@ -1,3 +1,28 @@
+<h2>Book catalog</h2>
+
+[DEMO LINK](https://Sviatoslav-Pilkiv.github.io/prometheus-x-course-task/)
+
+Here you can:
+
+- Enter a name for sign in
+<img src="https://i.ibb.co/w7d3nnL/pages-sign-in.png" alt="pages-sign-in">
+ 
+- View the list of books and, if necessary, view more detailed information about a particular book
+<img src="https://i.ibb.co/JqwYdpk/pages-books-list.png" alt="pages-books-list">
+
+- Filter and sort books by name and price, storing the query parameters in the URL
+<img src="https://i.ibb.co/CJs73RL/filters.png" alt="filters">
+
+- View detailed information about the selected book and buy the one that suits your taste
+<img src="https://i.ibb.co/WtKy2DR/pages-book.png" alt="pages-book">
+
+- Add a certain number of books that you like and would like to buy to your cart
+<img src="https://i.ibb.co/zFsJbNd/pages-book-added.png" alt="pages-book-added">
+
+- Complete the purchase in the basket or, if necessary, delete the books that you decided not to buy when considering
+<img src="https://i.ibb.co/FWkgfNc/pages-cart.png" alt="pages-cart">
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

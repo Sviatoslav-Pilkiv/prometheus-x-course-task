@@ -12,6 +12,7 @@ export default function Book(props) {
   const { orders } = useContext(CartContext);
   const { books } = useContext(BookContext);
   const { id } = useParams();
+  const defaultImage = "https://i.ibb.co/x80TWpZ/notImage.webp";
 
   useEffect(() => {
     if (count < 1) {
@@ -61,11 +62,7 @@ export default function Book(props) {
     <main className="book-page">
       <div className="container">
         <section className="book-preview">
-          <img
-            src={book.image || book.notImage}
-            alt=""
-            className="book-photo"
-          />
+          <img src={book.image || defaultImage} alt="" className="book-photo" />
         </section>
         <section className="book-information">
           <h4>
