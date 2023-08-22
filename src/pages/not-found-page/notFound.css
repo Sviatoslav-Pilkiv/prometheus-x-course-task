@@ -1,0 +1,62 @@
+.page-not-found {
+  background-image: linear-gradient(135deg, #00190b 0%, #8009ef 100%);
+  color: rgb(19, 162, 105);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.image-page {
+  padding-top: 20px;
+  width: 300px;
+  height: 300px;
+}
+
+.page-error {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-error h2 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.page-error h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.page-error p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.go-sign-in {
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  border-radius: 45px;
+  padding: 10px 15px;
+  margin: 10px 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: blueviolet;
+  background-image: linear-gradient(135deg, #53cafd 0%, #d10bd5 100%);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.go-sign-in:hover {
+  background-image: linear-gradient(135deg, #001e4c 0%, #056a3d 100%);
+  box-shadow: 0 15px 20px rgba(46, 229, 157, 0.4);
+  color: white;
+}
