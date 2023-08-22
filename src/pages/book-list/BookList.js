@@ -68,7 +68,7 @@ export default function BookList() {
           originalBooks.map((book) => (
             <div key={book.id} className="book">
               <img
-                src={book.image || notImage}
+                src={book.image ? book.image : notImage}
                 alt={book.title}
                 className="book-image"
               />

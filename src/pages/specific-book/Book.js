@@ -63,7 +63,7 @@ export default function Book(props) {
     <main className="book-page">
       <div className="container">
         <section className="book-preview">
-          <img src={book.image || notImage} alt="" className="book-photo" />
+          <img src={book.image ? book.image : notImage} alt="" className="book-photo" />
         </section>
         <section className="book-information">
           <h4>

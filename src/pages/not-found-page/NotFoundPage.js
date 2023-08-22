@@ -6,7 +6,11 @@ export default function NotFoundPage() {
   const navigate = useNavigate();
   return (
     <div class="page-not-found">
-      <img src="/image/astronaut.jpg" alt="Astronaut" className="image-page" />
+      <img
+        src="../../image/astronaut.jpg"
+        alt="Astronaut"
+        className="image-page"
+      />
       <div class="page-error">
         <h2>404</h2>
         <div class="page-massage">
