@@ -12,7 +12,7 @@ import NotFoundPage from "../pages/not-found-page/NotFoundPage";
 import App from "../App";
 
 export default function MyRouter(props) {
-  const [user, setUser] = useState(false);
+  const [user, setUser] = useState(localStorage.getItem("userName"));
   const [books, setBooks] = useState([]);
   const [orders, setOrders] = useState([]);
 
@@ -28,13 +28,6 @@ export default function MyRouter(props) {
       setOrders(JSON.parse(localeOrders));
     }
   }, []);
-
-    useEffect(() => {
-      const savedUser = localStorage.getItem("userName");
-      if (savedUser) {
-        setUser(true);
-      }
-    }, []);
 
   const addToCart = (id, title, count, price, totalPrice) => {
     const excitingOrders = orders.find((item) => item.id === id);
