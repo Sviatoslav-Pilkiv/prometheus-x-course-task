@@ -3,6 +3,7 @@ import { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { BookContext } from "../../context/BookContext";
 import Sort from "../../components/Sort";
+import notImage from "../../image/notImage.jpg";
 import "./list.css";
 
 export default function BookList() {
@@ -16,7 +17,7 @@ export default function BookList() {
     { key: "price 30+", name: "30+$", min: 30 },
   ]);
   const [changePrice, setChangePrice] = useState("all");
-  const defaultImage = "/image/notImage.jpg";
+  const defaultImage = "../../image/notImage.jpg";
 
   const handleBookName = (event) => {
     const searchText = event.target.value;
