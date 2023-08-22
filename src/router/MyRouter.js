@@ -29,6 +29,13 @@ export default function MyRouter(props) {
     }
   }, []);
 
+    useEffect(() => {
+      const savedUser = localStorage.getItem("userName");
+      if (savedUser) {
+        setUser(true);
+      }
+    }, []);
+
   const addToCart = (id, title, count, price, totalPrice) => {
     const excitingOrders = orders.find((item) => item.id === id);
 
